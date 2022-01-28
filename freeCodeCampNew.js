@@ -153,3 +153,14 @@ function checkSign(num) {
 }
 
 checkSign(10);
+
+
+
+// Use the parseInt Function with a Radix
+
+function convertToInteger(str) {
+  let convertedBinaryNum = parseInt(str, 2);
+  return convertedBinaryNum;
+}
+
+convertToInteger("10011");
