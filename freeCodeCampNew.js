@@ -101,30 +101,38 @@
 
 // Iterate with JavaScript Do...While Loops
 // Setup
-const myArray = [];
-let i = 0;
+// const myArray = [];
+// let i = 0;
+//
+// // Only change code below this line
+// do {
+//   myArray.push(i);
+//   i++;
+// } while (i < 5);
+//
+//
+// // Use the parseInt Function
+// function convertToInteger(str) {
+//   return parseInt(str);
+// }
+//
+// convertToInteger("56");
+//
+//
+// // Generate Random Fractions with JavaScript
+// function randomFraction() {
+//
+//   // Only change code below this line
+//
+//   return Math.random();
+//
+//   // Only change code above this line
+// }
 
-// Only change code below this line
-do {
-  myArray.push(i);
-  i++;
-} while (i < 5);
-
-
-// Use the parseInt Function
-function convertToInteger(str) {
-  return parseInt(str);
-}
-
-convertToInteger("56");
-
-
-// Generate Random Fractions with JavaScript
-function randomFraction() {
+// Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
 
   // Only change code below this line
 
-  return Math.random();
-
-  // Only change code above this line
+  return Math.floor(Math.random() * 10);
 }
