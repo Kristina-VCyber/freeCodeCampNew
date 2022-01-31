@@ -130,63 +130,63 @@
 // }
 
 // Generate Random Whole Numbers with JavaScript
-function randomWholeNum() {
-
-  // Only change code below this line
-
-  return Math.floor(Math.random() * 10);
-}
-
-// Use the Conditional (Ternary) Operator
-
-function checkEqual(a, b) {
-  return a === b ? "Equal" : "Not Equal";
-}
-
-checkEqual(1, 2);
-
-
-
-// Use Multiple Conditional (Ternary) Operators
-function checkSign(num) {
-  return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero";
-}
-
-checkSign(10);
-
-
-
-// Use the parseInt Function with a Radix
-
-function convertToInteger(str) {
-  let convertedBinaryNum = parseInt(str, 2);
-  return convertedBinaryNum;
-}
-
-convertToInteger("10011");
-
-// Compare Scopes of the var and let Keywords
-
-
-
-function checkScope() {
-  let i = 'function scope';
-  if (true) {
-    let i = 'block scope';
-    console.log('Block scope i is: ', i);
-  }
-  console.log('Function scope i is: ', i);
-  return i;
-}
-
-
-// Mutate an Array Declared with const
-
-const s = [5, 7, 2];
-function editInPlace() {
-  s[0] = 2;
-  s[1] = 5;
-  s[2] = 7;
+// function randomWholeNum() {
+//
+//   // Only change code below this line
+//
+//   return Math.floor(Math.random() * 10);
+// }
+//
+// // Use the Conditional (Ternary) Operator
+//
+// function checkEqual(a, b) {
+//   return a === b ? "Equal" : "Not Equal";
+// }
+//
+// checkEqual(1, 2);
+//
+//
+//
+// // Use Multiple Conditional (Ternary) Operators
+// function checkSign(num) {
+//   return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero";
+// }
+//
+// checkSign(10);
+//
+//
+//
+// // Use the parseInt Function with a Radix
+//
+// function convertToInteger(str) {
+//   let convertedBinaryNum = parseInt(str, 2);
+//   return convertedBinaryNum;
+// }
+//
+// convertToInteger("10011");
+//
+// // Compare Scopes of the var and let Keywords
+//
+//
+//
+// function checkScope() {
+//   let i = 'function scope';
+//   if (true) {
+//     let i = 'block scope';
+//     console.log('Block scope i is: ', i);
+//   }
+//   console.log('Function scope i is: ', i);
+//   return i;
+// }
+//
+//
+// // Mutate an Array Declared with const
+//
+// const s = [5, 7, 2];
+// function editInPlace() {
+//   s[0] = 2;
+//   s[1] = 5;
+//   s[2] = 7;
 
 
 
@@ -195,5 +195,22 @@ function editInPlace() {
   // Using s = [2, 5, 7] would be invalid
 
   // Only change code above this line
+// }
+// editInPlace();
+
+
+
+// Nesting For Loops
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      product = product * (arr[i][j]);
+    }
+  }
+  // Only change code above this line
+  return product;
 }
-editInPlace();
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
