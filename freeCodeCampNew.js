@@ -189,15 +189,13 @@
 //   s[2] = 7;
 
 
+// Only change code below this line
 
-  // Only change code below this line
+// Using s = [2, 5, 7] would be invalid
 
-  // Using s = [2, 5, 7] would be invalid
-
-  // Only change code above this line
+// Only change code above this line
 // }
 // editInPlace();
-
 
 
 // Nesting For Loops
@@ -217,65 +215,98 @@
 
 
 // Use Recursion to Create a Countdown
-function countdown (n){
-  if (n < 1) {
-    return [];
-  } else {
-    const countDownArray = countdown(n-1);
-    countDownArray.unshift(n);
-    return countDownArray;
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const countDownArray = countdown(n - 1);
+        countDownArray.unshift(n);
+        return countDownArray;
 
-  }
+    }
 }
 
 
 // Replace Loops using Recursion
-function sum(arr, n) {
-  if (n <= 0) {
-    return 0;
-  } else {
-    return sum(arr, n - 1) + arr[n - 1];
-  }
-}
+// function sum(arr, n) {
+//     if (n <= 0) {
+//         return 0;
+//     } else {
+//         return sum(arr, n - 1) + arr[n - 1];
+//     }
+// }
+//
+// // Profile Lookup
+// // Setup
+// const contacts = [
+//     {
+//         firstName: "Akira",
+//         lastName: "Laine",
+//         number: "0543236543",
+//         likes: ["Pizza", "Coding", "Brownie Points"],
+//     },
+//     {
+//         firstName: "Harry",
+//         lastName: "Potter",
+//         number: "0994372684",
+//         likes: ["Hogwarts", "Magic", "Hagrid"],
+//     },
+//     {
+//         firstName: "Sherlock",
+//         lastName: "Holmes",
+//         number: "0487345643",
+//         likes: ["Intriguing Cases", "Violin"],
+//     },
+//     {
+//         firstName: "Kristian",
+//         lastName: "Vos",
+//         number: "unknown",
+//         likes: ["JavaScript", "Gaming", "Foxes"],
+//     },
+// ];
+//
+// function lookUpProfile(name, prop) {
+//     for (let i = 0; i < contacts.length; i++) {
+//         if (contacts[i].firstName === name) {
+//             if (contacts[i].hasOwnProperty(prop)) {
+//                 return contacts[i][prop];
+//             } else {
+//                 return "No such property";
+//             }
+//         }
+//     }
+//     return "No such contact";
+// }
 
-// Profile Lookup
-// Setup
-const contacts = [
-  {
-    firstName: "Akira",
-    lastName: "Laine",
-    number: "0543236543",
-    likes: ["Pizza", "Coding", "Brownie Points"],
-  },
-  {
-    firstName: "Harry",
-    lastName: "Potter",
-    number: "0994372684",
-    likes: ["Hogwarts", "Magic", "Hagrid"],
-  },
-  {
-    firstName: "Sherlock",
-    lastName: "Holmes",
-    number: "0487345643",
-    likes: ["Intriguing Cases", "Violin"],
-  },
-  {
-    firstName: "Kristian",
-    lastName: "Vos",
-    number: "unknown",
-    likes: ["JavaScript", "Gaming", "Foxes"],
-  },
-];
 
-function lookUpProfile(name, prop) {
-  for (let i = 0; i < contacts.length; i++) {
-    if (contacts[i].firstName === name) {
-      if (contacts[i].hasOwnProperty(prop)) {
-        return contacts[i][prop];
-      } else {
-        return "No such property";
-      }
+
+// Counting Cards
+let count = 0;
+
+function cc(card) {
+    // Only change code below this line
+    switch (card) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            count--;
+            break;
     }
-  }
-  return "No such contact";
+    if (count > 0) {
+        return count + " Bet";
+    } else {
+        return count + " Hold";
+    }
+    // Only change code above this line
 }
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
