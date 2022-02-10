@@ -215,16 +215,16 @@
 
 
 // Use Recursion to Create a Countdown
-function countdown(n) {
-    if (n < 1) {
-        return [];
-    } else {
-        const countDownArray = countdown(n - 1);
-        countDownArray.unshift(n);
-        return countDownArray;
-
-    }
-}
+// function countdown(n) {
+//     if (n < 1) {
+//         return [];
+//     } else {
+//         const countDownArray = countdown(n - 1);
+//         countDownArray.unshift(n);
+//         return countDownArray;
+//
+//     }
+// }
 
 
 // Replace Loops using Recursion
@@ -312,49 +312,61 @@ function countdown(n) {
 // cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 // Use Arrow Functions to Write Concise Anonymous Functions
-const magic = () => new Date() ;
+// const magic = () => new Date() ;
+//
+// // Write arrow functions with parameters
+// const myConcat = (arr1, arr2) => arr1.concat(arr2);
+//
+// console.log(myConcat([1, 2], [3, 4, 5]))
+//
+// // Set Default Parameters for Your Functions
+//
+// // Only change code below this line
+// const increment = (number = 1, value = 1) => number + value;
+//
+// // Use the Rest Parameter with Function Parameters
+// const sum = (...args) => {
+//     return args.reduce((a, b) => a + b, 0);
+// }
+// // Only change code above this line
+//
+//
+// // Prevent Object Mutation
+// function freezeObj() {
+//     const MATH_CONSTANTS = {
+//         PI: 3.14
+//     };
+//     // Only change code below this line
+//     Object.freeze(MATH_CONSTANTS);
+//
+//     // Only change code above this line
+//     try {
+//         MATH_CONSTANTS.PI = 99;
+//     } catch(ex) {
+//         console.log(ex);
+//     }
+//     return MATH_CONSTANTS.PI;
+// }
+// const PI = freezeObj();
+//
+//
+// // Use the Spread Operator to Evaluate Arrays In-Place
+//
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+// let arr2;
+//
+// arr2 = [...arr1];  // Change this line
+//
+// console.log(arr2);
 
-// Write arrow functions with parameters
-const myConcat = (arr1, arr2) => arr1.concat(arr2);
+// Use Destructuring Assignment to Extract Values from Objects
 
-console.log(myConcat([1, 2], [3, 4, 5]))
-
-// Set Default Parameters for Your Functions
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+};
 
 // Only change code below this line
-const increment = (number = 1, value = 1) => number + value;
-
-// Use the Rest Parameter with Function Parameters
-const sum = (...args) => {
-    return args.reduce((a, b) => a + b, 0);
-}
+const {today, tomorrow} = HIGH_TEMPERATURES;
 // Only change code above this line
-
-
-// Prevent Object Mutation
-function freezeObj() {
-    const MATH_CONSTANTS = {
-        PI: 3.14
-    };
-    // Only change code below this line
-    Object.freeze(MATH_CONSTANTS);
-
-    // Only change code above this line
-    try {
-        MATH_CONSTANTS.PI = 99;
-    } catch(ex) {
-        console.log(ex);
-    }
-    return MATH_CONSTANTS.PI;
-}
-const PI = freezeObj();
-
-
-// Use the Spread Operator to Evaluate Arrays In-Place
-
-const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
-let arr2;
-
-arr2 = [...arr1];  // Change this line
-
-console.log(arr2);
