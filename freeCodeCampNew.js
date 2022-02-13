@@ -413,3 +413,15 @@ function removeFirstTwo(list) {
     return arr;
 }
 const arr = removeFirstTwo(source);
+
+// Use Recursion to Create a Range of Numbers
+
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+        return [startNum];
+    } else {
+        const numbersArr = rangeOfNumbers(startNum, endNum - 1);
+        numbersArr.push(endNum);
+        return numbersArr;
+    }
+}
