@@ -483,58 +483,70 @@
 
 // Write Concise Object Literal Declarations Using Object Property Shorthand
 
-const createPerson = (name, age, gender) => {
-    // Only change code below this line
-    return ({name, age, gender});
-    // Only change code above this line
-};
+// const createPerson = (name, age, gender) => {
+//     // Only change code below this line
+//     return ({name, age, gender});
+//     // Only change code above this line
+// };
 
 // Write Concise Declarative Functions with ES6
 
 // Only change code below this line
-const bicycle = {
-    gear: 2,
-    setGear (newGear) {
-        return this.gear = newGear;
-    }
-};
-// Only change code above this line
-bicycle.setGear(2);
-console.log(bicycle.gear);
+// const bicycle = {
+//     gear: 2,
+//     setGear (newGear) {
+//         return this.gear = newGear;
+//     }
+// };
+// // Only change code above this line
+// bicycle.setGear(2);
+// console.log(bicycle.gear);
 
 
 // Use class Syntax to Define a Constructor Function
 
 // Only change code below this line
-class Vegetable {
-    constructor (name) {
-        this.name = name;
-    }
-}
+// class Vegetable {
+//     constructor (name) {
+//         this.name = name;
+//     }
+// }
+//
+// // Only change code above this line
+//
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name); // Should display 'carrot'
+//
+// // Use getters and setters to Control Access to an Object
+// // Only change code below this line
+// class Thermostat {
+//     constructor(fahrenheitTemp) {
+//         this.fahrenheitTemp = fahrenheitTemp;
+//     }
+//
+//     get temperature() {
+//         return (5 / 9) * (this.fahrenheitTemp - 32);
+//     }
+//
+//     set temperature(celsiusTemp) {
+//         this.fahrenheitTemp = (celsiusTemp * 9.0) / 5 + 32;
+//     }
+// }
+// // Only change code above this line
+//
+// const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+// let temp = thermos.temperature; // 24.44 in Celsius
+// thermos.temperature = 26;
+// temp = thermos.temperature; // 26 in Celsius
 
-// Only change code above this line
+// Create a Module Script
 
-const carrot = new Vegetable('carrot');
-console.log(carrot.name); // Should display 'carrot'
-
-// Use getters and setters to Control Access to an Object
-// Only change code below this line
-class Thermostat {
-    constructor(fahrenheitTemp) {
-        this.fahrenheitTemp = fahrenheitTemp;
-    }
-
-    get temperature() {
-        return (5 / 9) * (this.fahrenheitTemp - 32);
-    }
-
-    set temperature(celsiusTemp) {
-        this.fahrenheitTemp = (celsiusTemp * 9.0) / 5 + 32;
-    }
-}
-// Only change code above this line
-
-const thermos = new Thermostat(76); // Setting in Fahrenheit scale
-let temp = thermos.temperature; // 24.44 in Celsius
-thermos.temperature = 26;
-temp = thermos.temperature; // 26 in Celsius
+<!-- Only change code below this line -->
+// <html>
+// <body>
+// <!-- Only change code below this line -->
+// <script type = "module" src="index.js"> </script>
+// <!-- Only change code above this line -->
+// </body>
+// </html>
+<!-- Only change code above this line -->
