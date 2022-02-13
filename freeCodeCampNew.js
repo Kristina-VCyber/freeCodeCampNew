@@ -550,3 +550,13 @@
 // </body>
 // </html>
 <!-- Only change code above this line -->
+
+// Use export to Share a Code Block
+const uppercaseString = (string) => {
+    return string.toUpperCase();
+}
+export {uppercaseString};
+const lowercaseString = (string) => {
+    return string.toLowerCase()
+}
+export {lowercaseString};
