@@ -611,41 +611,47 @@
 // });
 
 // Handle a Fulfilled Promise with then
-const makeServerRequest = new Promise((resolve, reject) => {
-    // responseFromServer is set to true to represent a successful response from a server
-    let responseFromServer = true;
-
-    if(responseFromServer) {
-        resolve("We got the data");
-    } else {
-        reject("Data not received");
-    }
-});
-makeServerRequest.then(result => {
-    console.log(result);
-});
-
-//Handle a Rejected Promise with catch
-const makeServerRequest = new Promise((resolve, reject) => {
-    // responseFromServer is set to false to represent an unsuccessful response from a server
-    let responseFromServer = false;
-
-    if(responseFromServer) {
-        resolve("We got the data");
-    } else {
-        reject("Data not received");
-    }
-});
-
-makeServerRequest.then(result => {
-    console.log(result);
-});
-makeServerRequest.catch(error => {
-    console.log(error);
-});
+// const makeServerRequest = new Promise((resolve, reject) => {
+//     // responseFromServer is set to true to represent a successful response from a server
+//     let responseFromServer = true;
+//
+//     if(responseFromServer) {
+//         resolve("We got the data");
+//     } else {
+//         reject("Data not received");
+//     }
+// });
+// makeServerRequest.then(result => {
+//     console.log(result);
+// });
+//
+// //Handle a Rejected Promise with catch
+// const makeServerRequest = new Promise((resolve, reject) => {
+//     // responseFromServer is set to false to represent an unsuccessful response from a server
+//     let responseFromServer = false;
+//
+//     if(responseFromServer) {
+//         resolve("We got the data");
+//     } else {
+//         reject("Data not received");
+//     }
+// });
+//
+// makeServerRequest.then(result => {
+//     console.log(result);
+// });
+// makeServerRequest.catch(error => {
+//     console.log(error);
+// });
 
 // Using the Test Method
 
-let myString = "Hello, World!";
-let myRegex = /Hello/;
-let result = myRegex.test(myString); // Change this line
+// let myString = "Hello, World!";
+// let myRegex = /Hello/;
+// let result = myRegex.test(myString); // Chang
+
+// Match Literal Strings
+
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);// e this line
