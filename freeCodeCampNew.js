@@ -652,22 +652,28 @@
 
 // Match Literal Strings
 
-let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
-let waldoRegex = /Waldo/; // Change this line
-let result = waldoRegex.test(waldoIsHiding);// e this line
-
-
-// Match a Literal String with Different Possibilities
-let petString = "James has a pet cat.";
-let petRegex = /dog|cat|bird|fish/; // Change this line
-let result = petRegex.test(petString);
-
+// let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+// let waldoRegex = /Waldo/; // Change this line
+// let result = waldoRegex.test(waldoIsHiding);// e this line
 //
-let myString = "freeCodeCamp";
-let fccRegex = /freeCodeCamp/i // Change this line
-let result = fccRegex.test(myString);
+//
+// // Match a Literal String with Different Possibilities
+// let petString = "James has a pet cat.";
+// let petRegex = /dog|cat|bird|fish/; // Change this line
+// let result = petRegex.test(petString);
+//
+// //
+// let myString = "freeCodeCamp";
+// let fccRegex = /freeCodeCamp/i // Change this line
+// let result = fccRegex.test(myString);
+//
+// // Extract Matches
+// let extractStr = "Extract the word 'coding' from this string.";
+// let codingRegex = /coding/; // Change this line
+// let result = extractStr.match(codingRegex); // Change this line
 
-// Extract Matches
-let extractStr = "Extract the word 'coding' from this string.";
-let codingRegex = /coding/; // Change this line
-let result = extractStr.match(codingRegex); // Change this line
+// Find More Than the First Match
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/ig; // Change this line
+let result = twinkleStar.match(starRegex) ; // Change this line
