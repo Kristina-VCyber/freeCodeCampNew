@@ -692,6 +692,13 @@
 // let result = quoteSample.match(vowelRegex); // Change this line
 
 //Match Letters of the Alphabet
-let quoteSample = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /[a-z]/ig; // Change this line
-let result = quoteSample.match(alphabetRegex); // Change this line
+// let quoteSample = "The quick brown fox jumps over the lazy dog.";
+// let alphabetRegex = /[a-z]/ig; // Change this line
+// let result = quoteSample.match(alphabetRegex); // Change this line
+
+
+// Match Numbers and Letters of the Alphabet
+
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
