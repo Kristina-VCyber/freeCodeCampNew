@@ -674,6 +674,12 @@
 
 // Find More Than the First Match
 
-let twinkleStar = "Twinkle, twinkle, little star";
-let starRegex = /Twinkle/ig; // Change this line
-let result = twinkleStar.match(starRegex) ; // Change this line
+// let twinkleStar = "Twinkle, twinkle, little star";
+// let starRegex = /Twinkle/ig; // Change this line
+// let result = twinkleStar.match(starRegex) ; // Change this line
+
+
+// Match Anything with Wildcard Period
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./; // Change this line
+let result = unRegex.test(exampleStr);
