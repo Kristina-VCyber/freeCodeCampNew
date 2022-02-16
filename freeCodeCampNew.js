@@ -720,3 +720,9 @@ let chewieRegex = /aa*a/i; // Change this line
 // Only change code above this line
 
 let result = chewieQuote.match(chewieRegex);
+
+
+// Find Characters with Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h[a-z]*?1>/; // Change this line
+let result = text.match(myRegex);
