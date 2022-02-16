@@ -704,6 +704,12 @@
 // let result = quoteSample.match(myRegex); // Change this line
 
 // Match Single Characters Not Specified
-let quoteSample = "3 blind mice.";
-let myRegex = /[^aeiou0-9]/gi; // Change this line
-let result = quoteSample.match(myRegex); // Change this line
+// let quoteSample = "3 blind mice.";
+// let myRegex = /[^aeiou0-9]/gi; // Change this line
+// let result = quoteSample.match(myRegex); // Change this line
+
+
+// Match Characters that Occur One or More Times
+let difficultSpelling = "Mississippi";
+let myRegex = /ss+/ig; // Change this line
+let result = difficultSpelling.match(myRegex);
