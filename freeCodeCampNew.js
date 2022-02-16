@@ -698,7 +698,12 @@
 
 
 // Match Numbers and Letters of the Alphabet
+//
+// let quoteSample = "Blueberry 3.141592653s are delicious.";
+// let myRegex = /[h-s2-6]/ig; // Change this line
+// let result = quoteSample.match(myRegex); // Change this line
 
-let quoteSample = "Blueberry 3.141592653s are delicious.";
-let myRegex = /[h-s2-6]/ig; // Change this line
+// Match Single Characters Not Specified
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi; // Change this line
 let result = quoteSample.match(myRegex); // Change this line
