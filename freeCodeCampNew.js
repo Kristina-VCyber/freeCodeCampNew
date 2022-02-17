@@ -761,14 +761,20 @@
 // Match Everything But Letters and Numbers
 
 // Use the shorthand character class \W to count the number of non-alphanumeric characters in various quotes and strings.
-let quoteSample = "The five boxing wizards jump quickly.";
-let nonAlphabetRegex = /\W/g; // Change this line
-let result = quoteSample.match(nonAlphabetRegex).length;
+// let quoteSample = "The five boxing wizards jump quickly.";
+// let nonAlphabetRegex = /\W/g; // Change this line
+// let result = quoteSample.match(nonAlphabetRegex).length;
+//
+//
+// // Match All Numbers
+//
+// // Use the shorthand character class \d to count how many digits are in movie titles. Written out numbers ("six" instead of 6) do not count.
+// let movieName = "2001: A Space Odyssey";
+// let numRegex = /\d/g; // Change this line
+// let result = movieName.match(numRegex).length;
 
-
-// Match All Numbers
-
-// Use the shorthand character class \d to count how many digits are in movie titles. Written out numbers ("six" instead of 6) do not count.
+// Match All Non-Numbers
+// Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.
 let movieName = "2001: A Space Odyssey";
-let numRegex = /\d/g; // Change this line
-let result = movieName.match(numRegex).length;
+let noNumRegex = /\D/g; // Change this line
+let result = movieName.match(noNumRegex).length;
