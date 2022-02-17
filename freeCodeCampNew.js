@@ -730,14 +730,14 @@
 
 // Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter C.
 // Find One or More Criminals in a Hunt
-let reCriminals = /CC*/; // Change this line
-
-// Match Beginning String Patterns
-// Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
-
-let rickyAndCal = "Cal and Ricky both like racing.";
-let calRegex = /^Cal/; // Change this line
-let result = calRegex.test(rickyAndCal);
+// let reCriminals = /CC*/; // Change this line
+//
+// // Match Beginning String Patterns
+// // Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
+//
+// let rickyAndCal = "Cal and Ricky both like racing.";
+// let calRegex = /^Cal/; // Change this line
+// let result = calRegex.test(rickyAndCal);
 
 
 
@@ -747,3 +747,10 @@ let result = calRegex.test(rickyAndCal);
 let caboose = "The last car on a train is the caboose";
 let lastRegex = /caboose$/; // Change this line
 let result = lastRegex.test(caboose);
+
+
+// Match All Letters and Numbers
+//Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
