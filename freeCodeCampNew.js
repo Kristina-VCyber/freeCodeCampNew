@@ -775,9 +775,9 @@
 
 // Match All Non-Numbers
 // Use the shorthand character class for non-digits \D to count how many non-digits are in movie titles.
-let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/g; // Change this line
-let result = movieName.match(noNumRegex).length;
+// let movieName = "2001: A Space Odyssey";
+// let noNumRegex = /\D/g; // Change this line
+// let result = movieName.match(noNumRegex).length;
 
 // Restrict Possible Usernames
 
@@ -788,14 +788,22 @@ let result = movieName.match(noNumRegex).length;
 //     Username letters can be lowercase and uppercase.
 
     // Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
-let username = "JackOfAllTrades";
-let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/ig;; // Change this line
-let result = userCheck.test(username);
+// let username = "JackOfAllTrades";
+// let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/ig;; // Change this line
+// let result = userCheck.test(username);
 
 
 
 // Match Whitespace
 // Change the regex countWhiteSpace to look for multiple whitespace characters in a string.
+// let sample = "Whitespace is important in separating words";
+// let countWhiteSpace = /\s/g; // Change this line
+// let result = sample.match(countWhiteSpace);
+
+
+
+// Match Non-Whitespace Characters
+// Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
 let sample = "Whitespace is important in separating words";
-let countWhiteSpace = /\s/g; // Change this line
-let result = sample.match(countWhiteSpace);
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
