@@ -829,12 +829,18 @@
 // Specify Exact Number of Matches
 // Change the regex timRegex to match the word Timber only when it has four letter m's.
 
-let timStr = "Timmmmber";
-let timRegex = /Tim{4}ber/; // Change this line
-let result = timRegex.test(timStr);
+// let timStr = "Timmmmber";
+// let timRegex = /Tim{4}ber/; // Change this line
+// let result = timRegex.test(timStr);
 
 // Check for All or None
 // Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
 let favWord = "favorite";
 let favRegex = /favou?rite/; // Change this line
 let result = favRegex.test(favWord);
+
+// Positive and Negative Lookahead
+// Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, and have two consecutive digits.
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
