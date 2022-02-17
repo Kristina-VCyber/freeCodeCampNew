@@ -710,24 +710,31 @@
 
 
 // Match Characters that Occur One or More Times
-let difficultSpelling = "Mississippi";
-let myRegex = /ss+/ig; // Change this line
-let result = difficultSpelling.match(myRegex);
-
-// Match Characters that Occur Zero or More Times
-// Only change code below this line
-let chewieRegex = /aa*a/i; // Change this line
-// Only change code above this line
-
-let result = chewieQuote.match(chewieRegex);
-
-
-// Find Characters with Lazy Matching
-let text = "<h1>Winter is coming</h1>";
-let myRegex = /<h[a-z]*?1>/; // Change this line
-let result = text.match(myRegex);
+// let difficultSpelling = "Mississippi";
+// let myRegex = /ss+/ig; // Change this line
+// let result = difficultSpelling.match(myRegex);
+//
+// // Match Characters that Occur Zero or More Times
+// // Only change code below this line
+// let chewieRegex = /aa*a/i; // Change this line
+// // Only change code above this line
+//
+// let result = chewieQuote.match(chewieRegex);
+//
+//
+// // Find Characters with Lazy Matching
+// let text = "<h1>Winter is coming</h1>";
+// let myRegex = /<h[a-z]*?1>/; // Change this line
+// let result = text.match(myRegex);
 
 
 // Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter C.
 // Find One or More Criminals in a Hunt
 let reCriminals = /CC*/; // Change this line
+
+// Match Beginning String Patterns
+// Use the caret character in a regex to find Cal only in the beginning of the string rickyAndCal.
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
