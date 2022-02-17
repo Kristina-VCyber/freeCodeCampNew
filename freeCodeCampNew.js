@@ -726,3 +726,8 @@ let result = chewieQuote.match(chewieRegex);
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<h[a-z]*?1>/; // Change this line
 let result = text.match(myRegex);
+
+
+// Write a greedy regex that finds one or more criminals within a group of other people. A criminal is represented by the capital letter C.
+// Find One or More Criminals in a Hunt
+let reCriminals = /CC*/; // Change this line
