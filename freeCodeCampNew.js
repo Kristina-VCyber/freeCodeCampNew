@@ -803,16 +803,24 @@
 
 
 // Match Non-Whitespace Characters
-// Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
-let sample = "Whitespace is important in separating words";
-let countNonWhiteSpace = /\S/g; // Change this line
-let result = sample.match(countNonWhiteSpace);
+// // Change the regex countNonWhiteSpace to look for multiple non-whitespace characters in a string.
+// let sample = "Whitespace is important in separating words";
+// let countNonWhiteSpace = /\S/g; // Change this line
+// let result = sample.match(countNonWhiteSpace);
+//
+//
+//
+// // Specify Upper and Lower Number of Matches
+// // Change the regex ohRegex to match the entire phrase Oh no only when it has 3 to 6 letter h's.
+// let ohStr = "Ohhh no";
+//
+// let ohRegex = /Oh{3,6}\sno/; // Change this line
+// let result = ohRegex.test(ohStr);
 
 
 
-// Specify Upper and Lower Number of Matches
-// Change the regex ohRegex to match the entire phrase Oh no only when it has 3 to 6 letter h's.
-let ohStr = "Ohhh no";
-
-let ohRegex = /Oh{3,6}\sno/; // Change this line
-let result = ohRegex.test(ohStr);
+// Specify Only the Lower Number of Matches
+// Change the regex haRegex to match the word Hazzah only when it has four or more letter z's.
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result = haRegex.test(haStr);
