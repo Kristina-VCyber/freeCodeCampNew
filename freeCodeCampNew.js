@@ -744,13 +744,23 @@
 // Match Ending String Patterns
 // Use the anchor character ($) to match the string caboose at the end of the string caboose.
 
-let caboose = "The last car on a train is the caboose";
-let lastRegex = /caboose$/; // Change this line
-let result = lastRegex.test(caboose);
+// let caboose = "The last car on a train is the caboose";
+// let lastRegex = /caboose$/; // Change this line
+// let result = lastRegex.test(caboose);
+//
+//
+// // Match All Letters and Numbers
+// //Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
+// let quoteSample = "The five boxing wizards jump quickly.";
+// let alphabetRegexV2 = /\w/g; // Change this line
+// let result = quoteSample.match(alphabetRegexV2).length;
 
 
-// Match All Letters and Numbers
-//Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
+
+
+// Match Everything But Letters and Numbers
+
+// Use the shorthand character class \W to count the number of non-alphanumeric characters in various quotes and strings.
 let quoteSample = "The five boxing wizards jump quickly.";
-let alphabetRegexV2 = /\w/g; // Change this line
-let result = quoteSample.match(alphabetRegexV2).length;
+let nonAlphabetRegex = /\W/g; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
