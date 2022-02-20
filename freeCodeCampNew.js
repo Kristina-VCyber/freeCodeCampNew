@@ -851,3 +851,8 @@ let myRegex = /(Franklin D.|Eleanor) Roosevelt/; // Change this line
 let result =  myRegex.test(myString); // Change this line
 // After passing the challenge experiment with myString and see how the grouping works
 
+
+// Reuse Patterns Using Capture Groups
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
+let result = repeatNum.match(reRegex);
