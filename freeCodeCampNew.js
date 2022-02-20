@@ -834,13 +834,20 @@
 // let result = timRegex.test(timStr);
 
 // Check for All or None
-// Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
-let favWord = "favorite";
-let favRegex = /favou?rite/; // Change this line
-let result = favRegex.test(favWord);
+// // Change the regex favRegex to match both the American English (favorite) and the British English (favourite) version of the word.
+// let favWord = "favorite";
+// let favRegex = /favou?rite/; // Change this line
+// let result = favRegex.test(favWord);
+//
+// // Positive and Negative Lookahead
+// // Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, and have two consecutive digits.
+// let sampleWord = "astronaut";
+// let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
+// let result = pwRegex.test(sampleWord);
 
-// Positive and Negative Lookahead
-// Use lookaheads in the pwRegex to match passwords that are greater than 5 characters long, and have two consecutive digits.
-let sampleWord = "astronaut";
-let pwRegex = /(?=\w{6,})(?=\w*\d{2})/; // Change this line
-let result = pwRegex.test(sampleWord);
+// Check For Mixed Grouping of Characters
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin D.|Eleanor) Roosevelt/; // Change this line
+let result =  myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+
