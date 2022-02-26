@@ -981,4 +981,12 @@
 let yourArray = [1,"hi",true,3,"world"]; // Change this line
 
 
+// Access an Arr's Contents Using Bracket Notation
+let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "Tina";
+// Only change code above this line
+console.log(myArray);
+
+
 
