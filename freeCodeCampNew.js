@@ -889,14 +889,20 @@
 
 // Use typeof to Check the Type of a Variable
 
-let seven = 7;
-let three = "3";
-console.log(seven + three);
-// Only change code below this line
-console.log(typeof seven);
-console.log(typeof three);
-// Catch Misspelled Variable and Function Names
-let receivables = 10;
-let payables = 8;
-let netWorkingCapital = receivables - payables;
-console.log(`Net working capital is: ${netWorkingCapital}`);
+// let seven = 7;
+// let three = "3";
+// console.log(seven + three);
+// // Only change code below this line
+// console.log(typeof seven);
+// console.log(typeof three);
+// // Catch Misspelled Variable and Function Names
+// let receivables = 10;
+// let payables = 8;
+// let netWorkingCapital = receivables - payables;
+// console.log(`Net working capital is: ${netWorkingCapital}`);
+// Catch Unclosed Parentheses, Brackets, Braces and Quotes
+let myArray = [1, 2, 3];
+let arraySum = myArray.reduce(function (previousValue, currentValue) {
+    return previousValue + currentValue
+}, 0)
+console.log(`Sum of array values is: ${arraySum}`);
