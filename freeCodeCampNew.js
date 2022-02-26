@@ -908,18 +908,29 @@
 // console.log(`Sum of array values is: ${arraySum}`);
 
 // Catch Mixed Usage of Single and Double Quotes
-let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
-console.log(innerHtml);
+// let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+// console.log(innerHtml);
+//
+// // Catch Use of Assignment Operator Instead of Equality Operator
+// let x = 7;
+// let y = 9;
+// let result = "to come";
+//
+// if(x === y) {
+//     result = "Equal!";
+// } else {
+//     result = "Not equal!";
+// }
+//
+// console.log(result);
 
-// Catch Use of Assignment Operator Instead of Equality Operator
-let x = 7;
-let y = 9;
-let result = "to come";
-
-if(x === y) {
-    result = "Equal!";
-} else {
-    result = "Not equal!";
+// Catch Missing Open and Closing Parenthesis After a Function Call
+function raiseToPower(b, e) {
+    return Math.pow(b, e);
 }
 
-console.log(result);
+let base = 2;
+let exp = 3;
+let power = raiseToPower(base, exp);
+console.log(power);
+
