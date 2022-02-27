@@ -1058,10 +1058,23 @@
 
 
 // Combine Arrays with the Spread Operator
-function spreadOut() {
-    let fragment = ['to', 'code'];
-    let sentence = ["learning", ...fragment,"is", "fun"]; // Change this line
-    return sentence;
-}
+// function spreadOut() {
+//     let fragment = ['to', 'code'];
+//     let sentence = ["learning", ...fragment,"is", "fun"]; // Change this line
+//     return sentence;
+// }
+//
+// console.log(spreadOut());
 
-console.log(spreadOut());
+// Check For The Presence of an Element With indexOf
+function quickCheck(arr, elem) {
+    // Only change code below this line
+    if (arr.indexOf(elem) >= 0) {
+        return true;
+    }
+    return false;
+}
+// Only change code above this line
+
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
